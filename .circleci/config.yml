@@ -56,7 +56,7 @@ workflows:
       - say-hello
       - say-goodbye
       - auto-message:
-          context: SLACK_ACCESS_TOKEN
+          context: Autobot
           requires:
             - say-hello
             - say-goodbye
