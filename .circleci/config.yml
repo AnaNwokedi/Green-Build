@@ -55,4 +55,8 @@ workflows:
     jobs:
       - say-hello
       - say-goodbye
-      - auto-message
+      - auto-message:
+          context: SLACK_ACCESS_TOKEN
+          requires:
+            - say-hello
+            - say-goodbye
